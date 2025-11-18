@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|c:\\users\\arsen\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\projects\\swipeelements\\assets\\scripts\\signals\\swipedupsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signals\\swipedupsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\input\\swipedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\swipedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\installers\\bootstrapinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\bootstrapinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|c:\\users\\arsen\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\projects\\swipeelements\\assets\\scripts\\signals\\swipedrightsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signals\\swipedrightsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\configs\\inputconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\configs\\inputconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\input\\swipehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\swipehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SwipedUpSignal.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\SwipedUpSignal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\SwipedUpSignal.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\SwipedUpSignal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Signals\\SwipedUpSignal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:36:59.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BootstrapInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:45:24.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SwipeDetector.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Input\\SwipeDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\SwipeDetector.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Input\\SwipeDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\SwipeDetector.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowEAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:50:43.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SwipedRightSignal.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\SwipedRightSignal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\SwipedRightSignal.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\SwipedRightSignal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Signals\\SwipedRightSignal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:36:46.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bootstrap.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Bootstrap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bootstrap.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Bootstrap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bootstrap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:48:21.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InputConfig.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\InputConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\InputConfig.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\InputConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Configs\\InputConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:14:54.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SwipeHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Input\\SwipeHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\SwipeHandler.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Input\\SwipeHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\SwipeHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:50:44.577Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
