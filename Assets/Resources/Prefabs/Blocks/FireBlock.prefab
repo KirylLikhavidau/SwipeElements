@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7749885113089456287}
   - component: {fileID: 7555408452436607118}
   - component: {fileID: 1081480686517763467}
+  - component: {fileID: 6072309904498897933}
   m_Layer: 5
   m_Name: FireBlock
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 223, y: 254}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7749885113089456287
@@ -98,3 +99,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6072309904498897933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132633809708903238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e84660cbae983542b36d63a38944c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BlockRectTransform>k__BackingField: {fileID: 1552718496577851223}
+  <BlockAnimator>k__BackingField: {fileID: 1081480686517763467}

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c7c7005d5906049b6f5d83914f9bf0, type: 3}
   m_Name: InputConfigAsset
   m_EditorClassIdentifier: 
-  <MinimumDistance>k__BackingField: 0
-  <MaximumTime>k__BackingField: 0
+  <MinimumDistance>k__BackingField: 0.2
+  <MaximumTime>k__BackingField: 1
+  <DirectionThreshold>k__BackingField: 0.9

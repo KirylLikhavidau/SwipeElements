@@ -1,58 +1,89 @@
+using Configs;
+using Input;
+using Signals;
 using UnityEngine;
 using Zenject;
 
-public class BootstrapInstaller : MonoInstaller
+namespace Installers
 {
-    [SerializeField] private InputConfig _inputConfig;
-    
-    public override void InstallBindings()
+    public class BootstrapInstaller : MonoInstaller
     {
-        SignalBusInstaller.Install(Container);
-        BindInstallerInterfaces();
-        BindSignals();
+        [SerializeField] private InputConfig _inputConfig;
+        [SerializeField] private GridConfig _gridConfig;
+        [SerializeField] private BlockConfig _blockConfig;
+        [SerializeField] private DoTweenConfig _doTweenConfig;
 
-        BindConfigs();
-        
-        BindInput();
-    }
+        public override void InstallBindings()
+        {
+            SignalBusInstaller.Install(Container);
+            BindInstallerInterfaces();
+            BindSignals();
 
-    private void BindSignals()
-    {
-        Container
-            .DeclareSignal<SwipedUpSignal>();
-        Container
-            .DeclareSignal<SwipedDownSignal>();
-        Container
-            .DeclareSignal<SwipedLeftSignal>();
-        Container
-            .DeclareSignal<SwipedRightSignal>();
-    }
+            BindConfigs();
 
-    private void BindInput()
-    {
-        Container
-            .BindInterfacesAndSelfTo<SwipeHandler>()
-            .AsSingle();
+            BindInput();
+        }
 
-        Container
-            .BindInterfacesAndSelfTo<SwipeDetector>()
-            .AsSingle();
-    }
+        private void BindSignals()
+        {
+            Container
+                .DeclareSignal<SwipedSignal>();
+            Container
+                .DeclareSignal<SectionDetectedSignal>();
+            Container
+                .DeclareSignal<BlockMovedSignal>();
+            Container
+                .DeclareSignal<BlocksDeactivatingSignal>();
+            Container
+                .DeclareSignal<BlocksDeactivatedSignal>();
+            Container
+                .DeclareSignal<GridNormalizedSignal>();
+        }
 
-    private void BindConfigs()
-    {
-        Container
-            .Bind<InputConfig>()
-            .FromInstance(_inputConfig)
-            .AsSingle()
-            .NonLazy();
-    }
+        private void BindInput()
+        {
+            Container
+                .BindInterfacesAndSelfTo<SwipeHandler>()
+                .AsSingle();
 
-    private void BindInstallerInterfaces()
-    {
-        Container
-            .BindInterfacesTo<BootstrapInstaller>()
-            .FromInstance(this)
-            .NonLazy();
+            Container
+                .BindInterfacesAndSelfTo<SwipeDetector>()
+                .AsSingle();
+        }
+
+        private void BindConfigs()
+        {
+            Container
+                .Bind<InputConfig>()
+                .FromInstance(_inputConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container
+                .Bind<GridConfig>()
+                .FromInstance(_gridConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container
+                .Bind<BlockConfig>()
+                .FromInstance(_blockConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container
+                .Bind<DoTweenConfig>()
+                .FromInstance(_doTweenConfig)
+                .AsSingle()
+                .NonLazy();
+        }
+
+        private void BindInstallerInterfaces()
+        {
+            Container
+                .BindInterfacesTo<BootstrapInstaller>()
+                .FromInstance(this)
+                .NonLazy();
+        }
     }
 }

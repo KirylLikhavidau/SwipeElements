@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6583598219895764851}
   - component: {fileID: 4133433595654019237}
   - component: {fileID: 2731980037198903039}
+  - component: {fileID: 1825227559493984091}
   m_Layer: 5
   m_Name: WaterBlock
   m_TagString: Untagged
@@ -98,3 +99,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1825227559493984091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823400339487915709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e84660cbae983542b36d63a38944c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BlockRectTransform>k__BackingField: {fileID: 2159363553715706363}
+  <BlockAnimator>k__BackingField: {fileID: 2731980037198903039}

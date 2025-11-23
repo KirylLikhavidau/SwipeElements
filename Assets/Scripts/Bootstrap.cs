@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-public class Bootstrap : MonoBehaviour
+namespace Bootstrap
 {
+    public class Bootstrap : MonoBehaviour
+    {
 
+    }
 }
