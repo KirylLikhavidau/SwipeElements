@@ -78,3 +78,4 @@ MonoBehaviour:
   _gridConfig: {fileID: 11400000, guid: 54eb8152d0d03ec48a8cd97399545694, type: 2}
   _blockConfig: {fileID: 11400000, guid: 61581453c24273e4da849beb063831cc, type: 2}
   _doTweenConfig: {fileID: 11400000, guid: dc61c6a152b4c394f9481a030d6e4c69, type: 2}
+  _balloonConfig: {fileID: 11400000, guid: 960906c5ce524454f914d5f04624c250, type: 2}

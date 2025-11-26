@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03b4450e28eed874ea69e0ca38bfb36f, type: 3}
-  m_Name: BlockConfigAsset
+  m_Name: PrefabsConfigAsset
   m_EditorClassIdentifier: 
   <BlockPrefabs>k__BackingField:
   - {fileID: 1552718496577851223, guid: f3cf2f6e2d8d2c946b591718a1a4925f, type: 3}
   - {fileID: 2159363553715706363, guid: d064bc7e494f48b43bc43938bfc6a2d6, type: 3}
+  <BalloonPrefabs>k__BackingField:
+  - {fileID: 8670974593152492338, guid: 21ea28ac0f7fb6544aa870e394c4c08d, type: 3}
+  - {fileID: 3830332893521694638, guid: e4e1f5ead10c21f4eba269f9b88d3af3, type: 3}

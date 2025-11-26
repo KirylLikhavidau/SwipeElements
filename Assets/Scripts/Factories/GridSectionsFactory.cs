@@ -12,7 +12,7 @@ namespace Factories
         private GridSection _sectionPrefab;
         private RectTransform[] _blockPrefabs;
 
-        public GridSectionsFactory(DiContainer diContainer, GridConfig gridConfig, BlockConfig blockConfig)
+        public GridSectionsFactory(DiContainer diContainer, GridConfig gridConfig, PrefabsConfig blockConfig)
         {
             _diContainer = diContainer;
             _sectionPrefab = gridConfig.SectionPrefab;

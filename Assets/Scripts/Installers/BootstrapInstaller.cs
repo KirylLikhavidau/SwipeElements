@@ -10,8 +10,9 @@ namespace Installers
     {
         [SerializeField] private InputConfig _inputConfig;
         [SerializeField] private GridConfig _gridConfig;
-        [SerializeField] private BlockConfig _blockConfig;
+        [SerializeField] private PrefabsConfig _blockConfig;
         [SerializeField] private DoTweenConfig _doTweenConfig;
+        [SerializeField] private BalloonConfig _balloonConfig;
 
         public override void InstallBindings()
         {
@@ -66,7 +67,7 @@ namespace Installers
                 .NonLazy();
 
             Container
-                .Bind<BlockConfig>()
+                .Bind<PrefabsConfig>()
                 .FromInstance(_blockConfig)
                 .AsSingle()
                 .NonLazy();
@@ -74,6 +75,12 @@ namespace Installers
             Container
                 .Bind<DoTweenConfig>()
                 .FromInstance(_doTweenConfig)
+                .AsSingle()
+                .NonLazy();
+
+            Container
+                .Bind<BalloonConfig>()
+                .FromInstance(_balloonConfig)
                 .AsSingle()
                 .NonLazy();
         }
