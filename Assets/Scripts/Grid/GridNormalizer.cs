@@ -54,7 +54,7 @@ namespace Grid
         {
             Debug.Log("Normalize started");
 
-            Sequence sequence = DOTween.Sequence();
+            Sequence sequence = DOTween.Sequence().SetLink(_gridInitializer.GridSections[0, 0].gameObject, LinkBehaviour.KillOnDestroy);
 
             CreateNewNormalizeGrid(_gridInitializer.GridSections.GetLength(0), _gridInitializer.GridSections.GetLength(1));
             CalculatePositions();
@@ -76,7 +76,7 @@ namespace Grid
                     }
                 }
 
-            await UniTask.WaitForSeconds(sequence.Duration());
+            await sequence.AsyncWaitForCompletion();
 
             foreach (var KeyPosition in _instructionsForMoveSections.Keys)
             {
@@ -100,7 +100,8 @@ namespace Grid
             targetSection.FillSection(startSection.CurrentBlockType, startSection.CurrentBlock);
             startSection.CurrentBlock.BlockRectTransform.SetParent(targetSection.transform);
 
-            return startSection.CurrentBlock.BlockRectTransform.DOLocalMove(Vector3.zero, movingDuration);
+            return startSection.CurrentBlock.BlockRectTransform.DOLocalMove(Vector3.zero, movingDuration)
+                .SetLink(startSection.CurrentBlock.BlockRectTransform.gameObject, LinkBehaviour.KillOnDestroy);
         }
 
         private void CalculatePositions()

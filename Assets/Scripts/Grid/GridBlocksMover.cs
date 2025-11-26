@@ -111,21 +111,23 @@ namespace Grid
             signalSection.CurrentBlock.BlockRectTransform.SetParent(targetSection.transform);
 
             if (targetSectionBlock != null)
-                sequence.Append(signalSection.CurrentBlock.BlockRectTransform.DOMove(targetSectionBlockPosition, _doTweenConfig.SwappingBlocksDurationInSec));
+                sequence.Append(signalSection.CurrentBlock.BlockRectTransform.DOMove(targetSectionBlockPosition, 
+                    _doTweenConfig.SwappingBlocksDurationInSec));
             else
-                sequence.Append(signalSection.CurrentBlock.BlockRectTransform.DOLocalMove(targetSectionBlockPosition, _doTweenConfig.SwappingBlocksDurationInSec));
+                sequence.Append(signalSection.CurrentBlock.BlockRectTransform.DOLocalMove(targetSectionBlockPosition, 
+                    _doTweenConfig.SwappingBlocksDurationInSec));
 
             signalSection.FillSection(targetSectionBlockType, targetSectionBlock);
 
             if (targetSectionBlock != null)
             {
                 targetSectionBlock.BlockRectTransform.SetParent(signalSection.transform);
-                sequence.Join(targetSectionBlock.BlockRectTransform.DOMove(signalSectionBlockPosition, _doTweenConfig.SwappingBlocksDurationInSec));
+                sequence.Join(targetSectionBlock.BlockRectTransform.DOMove(signalSectionBlockPosition, 
+                    _doTweenConfig.SwappingBlocksDurationInSec));
             }
 
             if (!_isMoving)
             {
-                //Сделать так чтобы не мог взаимодействовать пока идут процессы(нормализация, деактивация)
                 _isMoving = true;
                 await UniTask.WaitForSeconds(sequence.Duration());
                 _isMoving = false;

@@ -1,4 +1,5 @@
-﻿using Grid;
+﻿using Configs;
+using Grid;
 using UnityEngine;
 using Zenject;
 
@@ -6,10 +7,13 @@ namespace Installers
 {
     public class GridInstaller : MonoInstaller
     {
+        [SerializeField] private GridConfig _gridConfig;
         [SerializeField] private RectTransform _gridInitialStartPoint;
 
         public override void InstallBindings()
         {
+            BindConfigs();
+
             BindGridInitializer();
             BindInputProcessor();
             BindSectionMover();
@@ -18,11 +22,20 @@ namespace Installers
             BindNormalizer();
         }
 
+        private void BindConfigs()
+        {
+            Container
+                .Bind<GridConfig>()
+                .FromInstance(_gridConfig)
+                .AsSingle()
+                .NonLazy();
+        }
+
         private void BindNormalizer()
         {
             Container
-                        .BindInterfacesAndSelfTo<GridNormalizer>()
-                        .AsSingle();
+                .BindInterfacesAndSelfTo<GridNormalizer>()
+                .AsSingle();
         }
 
         private void BindDeactivator()

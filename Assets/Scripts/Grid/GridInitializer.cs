@@ -38,6 +38,8 @@ namespace Grid
 
         public void Initialize()
         {
+            _gridInitialStartPoint.transform.localPosition = new Vector3(((_gridWidth-1) * _cellSize)/2 * -1, _gridInitialStartPoint.localPosition.y, 0);
+            
             if (_initialLayout != null)
             {
                 if (_initialLayout.Length == _gridWidth * _gridHeight)

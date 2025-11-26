@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using Enums;
 using Grid.Components;
 using Signals;
 using System;
@@ -14,7 +15,6 @@ namespace Grid
 
         private readonly SignalBus _signalBus;
         private GridInitializer _gridInitializer;
-        //private List<UniTask> _deactivationTasks = new List<UniTask>();
 
         private SectionDeactivator(SignalBus signalBus, GridInitializer gridInitializer)
         {
@@ -31,17 +31,6 @@ namespace Grid
         {
             _signalBus.TryUnsubscribe<BlocksDeactivatingSignal>((signalArguments) => Deactivate(signalArguments.Sections));
         }
-
-        //private async void AwaitDeactivations(BlocksDeactivatingSignal signalArguments)
-        //{
-        //    _deactivationTasks.Add(Deactivate(signalArguments.Sections));
-
-        //    if (_deactivationTasks.Count == 0)
-        //    {
-        //        await UniTask.WhenAll(_deactivationTasks);
-        //        _deactivationTasks = new List<UniTask>();
-        //    }
-        //}
 
         private async void Deactivate(List<GridSection> gridSections)
         {
@@ -71,7 +60,24 @@ namespace Grid
                 gridSections[i].IsInAnyProcess = false;
             }
 
-            _signalBus.Fire<BlocksDeactivatedSignal>();
+            if (GridIsEmpty())
+                _signalBus.Fire<EmptyGridSignal>();
+            else
+                _signalBus.Fire<BlocksDeactivatedSignal>();
+        }
+
+        private bool GridIsEmpty()
+        {
+            for (int y = 1; y < _gridInitializer.GridSections.GetLength(1); y++)
+                for (int x = 0; x < _gridInitializer.GridSections.GetLength(0); x++)
+                {
+                    if (_gridInitializer.GridSections[x, y].CurrentBlockType != BlockType.Empty)
+                    {
+                        return false;
+                    }
+                }
+
+            return true;
         }
     }
 }

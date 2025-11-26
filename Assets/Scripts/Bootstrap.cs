@@ -1,10 +1,9 @@
-﻿using System.Runtime.CompilerServices;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Bootstrap
 {
     public class Bootstrap : MonoBehaviour
     {
-        
+
     }
 }

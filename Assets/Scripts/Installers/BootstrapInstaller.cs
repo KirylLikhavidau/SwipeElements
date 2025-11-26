@@ -1,6 +1,8 @@
+using Bootstrap;
 using Configs;
 using Input;
 using Signals;
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -9,7 +11,6 @@ namespace Installers
     public class BootstrapInstaller : MonoInstaller
     {
         [SerializeField] private InputConfig _inputConfig;
-        [SerializeField] private GridConfig _gridConfig;
         [SerializeField] private PrefabsConfig _blockConfig;
         [SerializeField] private DoTweenConfig _doTweenConfig;
         [SerializeField] private BalloonConfig _balloonConfig;
@@ -23,6 +24,17 @@ namespace Installers
             BindConfigs();
 
             BindInput();
+
+            BindSceneLoader();
+        }
+
+        private void BindSceneLoader()
+        {
+            Container
+                .BindInterfacesAndSelfTo<SceneLoader>()
+                .AsSingle()
+                .WithArguments(1, 3)
+                .NonLazy();
         }
 
         private void BindSignals()
@@ -38,7 +50,14 @@ namespace Installers
             Container
                 .DeclareSignal<BlocksDeactivatedSignal>();
             Container
-                .DeclareSignal<GridNormalizedSignal>();
+                .DeclareSignal<GridNormalizedSignal>()
+                .OptionalSubscriber();
+            Container
+                .DeclareSignal<NextButtonClickedSignal>();
+            Container
+                .DeclareSignal<RestartButtonClickedSignal>();
+            Container
+                .DeclareSignal<EmptyGridSignal>();
         }
 
         private void BindInput()
@@ -57,12 +76,6 @@ namespace Installers
             Container
                 .Bind<InputConfig>()
                 .FromInstance(_inputConfig)
-                .AsSingle()
-                .NonLazy();
-
-            Container
-                .Bind<GridConfig>()
-                .FromInstance(_gridConfig)
                 .AsSingle()
                 .NonLazy();
 
