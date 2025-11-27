@@ -13,6 +13,8 @@ namespace Grid
     {
         private const string Kill = nameof(Kill);
 
+        public bool IsDeactivatingSmth {  get; private set; } = false;
+
         private readonly SignalBus _signalBus;
         private GridInitializer _gridInitializer;
 
@@ -24,16 +26,18 @@ namespace Grid
 
         public void Initialize()
         {
-            _signalBus.Subscribe<BlocksDeactivatingSignal>((signalArguments) => Deactivate(signalArguments.Sections));
+            _signalBus.Subscribe<BlocksDeactivatingSignal>((signalArguments) => Deactivate(signalArguments.Sections).Forget());
         }
 
         public void Dispose()
         {
-            _signalBus.TryUnsubscribe<BlocksDeactivatingSignal>((signalArguments) => Deactivate(signalArguments.Sections));
+            _signalBus.TryUnsubscribe<BlocksDeactivatingSignal>((signalArguments) => Deactivate(signalArguments.Sections).Forget());
         }
 
-        private async void Deactivate(List<GridSection> gridSections)
+        private async UniTask Deactivate(List<GridSection> gridSections)
         {
+            IsDeactivatingSmth = true;
+
             List<UniTask> tasks = new List<UniTask>();
 
             for (int i = 0; i < gridSections.Count; i++)
@@ -59,6 +63,8 @@ namespace Grid
 
                 gridSections[i].IsInAnyProcess = false;
             }
+
+            IsDeactivatingSmth = false;
 
             if (GridIsEmpty())
                 _signalBus.Fire<EmptyGridSignal>();

@@ -1,4 +1,5 @@
-﻿using Enums;
+﻿using Cysharp.Threading.Tasks;
+using Enums;
 using Grid.Components;
 using Signals;
 using System;
@@ -12,31 +13,36 @@ namespace Grid
     {
         private readonly SignalBus _signalBus;
         private GridInitializer _gridInitializer;
+        private SectionDeactivator _sectionDeactivator;
 
         private List<GridSection> _horizontalSections = new List<GridSection>();
         private List<GridSection> _verticalSections = new List<GridSection>();
         private List<GridSection> _matchingSections = new List<GridSection>();
 
-        public SectionsMatcher(GridInitializer gridInitializer, SignalBus signalBus)
+        public SectionsMatcher(GridInitializer gridInitializer, SignalBus signalBus, SectionDeactivator sectionDeactivator)
         {
             _gridInitializer = gridInitializer;
             _signalBus = signalBus;
+            _sectionDeactivator = sectionDeactivator;
         }
 
         public void Initialize()
         {
-            _signalBus.Subscribe<GridNormalizedSignal>(TryGetMatchInAllSections);
-            _signalBus.Subscribe<BlockMovedSignal>(TryGetMatch);
+            _signalBus.Subscribe<GridNormalizedSignal>(() => TryGetMatchInAllSections().Forget());
+            _signalBus.Subscribe<BlockMovedSignal>((signalArguments) => TryGetMatch(signalArguments).Forget());
         }
 
         public void Dispose()
         {
-            _signalBus.TryUnsubscribe<GridNormalizedSignal>(TryGetMatchInAllSections);
-            _signalBus.TryUnsubscribe<BlockMovedSignal>(TryGetMatch);
+            _signalBus.TryUnsubscribe<GridNormalizedSignal>(() => TryGetMatchInAllSections().Forget());
+            _signalBus.TryUnsubscribe<BlockMovedSignal>((signalArguments) => TryGetMatch(signalArguments).Forget());
         }
 
-        private void TryGetMatch(BlockMovedSignal signalArguments)
+        private async UniTask TryGetMatch(BlockMovedSignal signalArguments)
         {
+            if (_sectionDeactivator.IsDeactivatingSmth)
+                await UniTask.WaitUntil(() => !_sectionDeactivator.IsDeactivatingSmth);
+
             List<GridSection> sectionsToDeactivate = new List<GridSection>();
 
             if (signalArguments.FirstSection.CurrentBlock != null && !signalArguments.FirstSection.IsInAnyProcess)
@@ -57,10 +63,17 @@ namespace Grid
             {
                 _signalBus.Fire(new BlocksDeactivatingSignal(sectionsToDeactivate));
             }
+            else
+            {
+                _signalBus.Fire(new BlocksDeactivatedSignal());
+            }
         }
 
-        private void TryGetMatchInAllSections()
+        private async UniTask TryGetMatchInAllSections()
         {
+            if (_sectionDeactivator.IsDeactivatingSmth)
+                await UniTask.WaitUntil(() => !_sectionDeactivator.IsDeactivatingSmth);
+
             List<GridSection> sectionsToDeactivate = new List<GridSection>();
             List<GridSection> sectionsFromMatch = null;
 
@@ -201,12 +214,10 @@ namespace Grid
 
             if (_matchingSections.Count >= 3)
             {
-                Debug.Log(_matchingSections.Count);
                 return _matchingSections;
             }
             else
             {
-                Debug.Log("MatchesNotFoundHorizontally");
                 _horizontalSections.Clear();
                 _verticalSections.Clear();
                 _verticalSections.Add(movedSection);
@@ -242,7 +253,7 @@ namespace Grid
             {
                 return _matchingSections;
             }
-            Debug.Log("MatchesNotFoundVertically");
+
             return null;
         }
     }

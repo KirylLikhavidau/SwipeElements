@@ -6,6 +6,7 @@ using Grid.Components;
 using Signals;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using Zenject;
 
@@ -17,25 +18,44 @@ namespace Grid
 
         private GridInitializer _gridInitializer;
         private DoTweenConfig _doTweenConfig;
+        private SectionDeactivator _sectionDeactivator;
 
         private BlockType[,] _normalizedSections;
         private Dictionary<(int x, int y), (int moveX, int moveY)> _instructionsForMoveSections;
+        private bool _isNormalizing;
+        private bool _normalizeRequested;
 
-        public GridNormalizer(SignalBus signalBus, GridInitializer gridInitializer, DoTweenConfig doTweenConfig)
+        private readonly SemaphoreSlim _normalizeLock = new SemaphoreSlim(1, 1);
+
+        public GridNormalizer(SignalBus signalBus, GridInitializer gridInitializer, DoTweenConfig doTweenConfig, SectionDeactivator sectionDeactivator)
         {
             _signalBus = signalBus;
             _gridInitializer = gridInitializer;
             _doTweenConfig = doTweenConfig;
+            _sectionDeactivator = sectionDeactivator;
+            _isNormalizing = false;
+            _normalizeRequested = false;
         }
 
         public void Initialize()
         {
-            _signalBus.Subscribe<BlocksDeactivatedSignal>(NormalizeGrid);
+            _signalBus.Subscribe<BlocksDeactivatedSignal>(() => NormalizeGrid().Forget());
         }
 
         public void Dispose()
         {
-            _signalBus.TryUnsubscribe<BlocksDeactivatedSignal>(NormalizeGrid);
+            _signalBus.TryUnsubscribe<BlocksDeactivatedSignal>(() => NormalizeGrid().Forget());
+        }
+
+        public void RequestNormalize()
+        {
+            if (_isNormalizing)
+            {
+                _normalizeRequested = true;
+                return;
+            }
+
+            NormalizeGrid().Forget();
         }
 
         private void CreateNewNormalizeGrid(int width, int height)
@@ -50,47 +70,68 @@ namespace Grid
                 }
         }
 
-        private async void NormalizeGrid()
+        private async UniTask NormalizeGrid()
         {
-            Debug.Log("Normalize started");
+            if (_sectionDeactivator.IsDeactivatingSmth) return;
 
-            Sequence sequence = DOTween.Sequence().SetLink(_gridInitializer.GridSections[0, 0].gameObject, LinkBehaviour.KillOnDestroy);
+            await _normalizeLock.WaitAsync();
 
-            CreateNewNormalizeGrid(_gridInitializer.GridSections.GetLength(0), _gridInitializer.GridSections.GetLength(1));
-            CalculatePositions();
+            try
+            {
+                Debug.Log("Normalize started");
+                _isNormalizing = true;
+                _normalizeRequested = false;
 
-            for (int y = 1; y < _gridInitializer.GridSections.GetLength(1); y++)
-                for (int x = 0; x < _gridInitializer.GridSections.GetLength(0); x++)
-                {
-                    if (_gridInitializer.GridSections[x, y].CurrentBlockType != BlockType.Empty)
+                Sequence sequence = DOTween.Sequence().SetLink(_gridInitializer.GridSections[0, 0].gameObject, LinkBehaviour.KillOnDestroy);
+
+                CreateNewNormalizeGrid(_gridInitializer.GridSections.GetLength(0), _gridInitializer.GridSections.GetLength(1));
+                CalculatePositions();
+
+                for (int y = 1; y < _gridInitializer.GridSections.GetLength(1); y++)
+                    for (int x = 0; x < _gridInitializer.GridSections.GetLength(0); x++)
                     {
-                        ValueTuple<int, int> movePosition;
-                        if (_instructionsForMoveSections.TryGetValue((x, y), out movePosition))
+                        if (_gridInitializer.GridSections[x, y].CurrentBlockType != BlockType.Empty)
                         {
-                            sequence.Join(NormalizeMove(_gridInitializer.GridSections[movePosition.Item1, movePosition.Item2], _gridInitializer.GridSections[x, y]));
-                            _gridInitializer.GridSections[x, y].SetEmpty();
+                            ValueTuple<int, int> movePosition;
+                            if (_instructionsForMoveSections.TryGetValue((x, y), out movePosition))
+                            {
+                                sequence.Join(NormalizeMove(_gridInitializer.GridSections[movePosition.Item1, movePosition.Item2], _gridInitializer.GridSections[x, y]));
+                                _gridInitializer.GridSections[x, y].SetEmpty();
 
-                            _gridInitializer.GridSections[movePosition.Item1, movePosition.Item2].IsInAnyProcess = true;
-                            _gridInitializer.GridSections[x, y].IsInAnyProcess = true;
+                                _gridInitializer.GridSections[movePosition.Item1, movePosition.Item2].IsInAnyProcess = true;
+                                _gridInitializer.GridSections[x, y].IsInAnyProcess = true;
+                            }
                         }
                     }
+
+                await sequence.AsyncWaitForCompletion();
+
+                foreach (var KeyPosition in _instructionsForMoveSections.Keys)
+                {
+                    _gridInitializer.GridSections[KeyPosition.x, KeyPosition.y].IsInAnyProcess = false;
                 }
 
-            await sequence.AsyncWaitForCompletion();
+                foreach (var ValuePosition in _instructionsForMoveSections.Values)
+                {
+                    _gridInitializer.GridSections[ValuePosition.moveX, ValuePosition.moveY].IsInAnyProcess = false;
+                }
 
-            foreach (var KeyPosition in _instructionsForMoveSections.Keys)
-            {
-                _gridInitializer.GridSections[KeyPosition.x, KeyPosition.y].IsInAnyProcess = false;
+                Debug.Log("Normalize ended");
+                _isNormalizing = false;
+
+                if (_normalizeRequested)
+                {
+                    NormalizeGrid().Forget();
+                }
+                else
+                {
+                    _signalBus.Fire<GridNormalizedSignal>();
+                }
             }
-
-            foreach (var ValuePosition in _instructionsForMoveSections.Values)
+            finally
             {
-                _gridInitializer.GridSections[ValuePosition.moveX, ValuePosition.moveY].IsInAnyProcess = false;
+                _normalizeLock.Release();
             }
-
-            Debug.Log("Normalize ended");
-
-            _signalBus.Fire<GridNormalizedSignal>();
         }
 
         private Tween NormalizeMove(GridSection targetSection, GridSection startSection)
