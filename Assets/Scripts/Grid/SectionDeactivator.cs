@@ -74,7 +74,7 @@ namespace Grid
 
         private bool GridIsEmpty()
         {
-            for (int y = 1; y < _gridInitializer.GridSections.GetLength(1); y++)
+            for (int y = 0; y < _gridInitializer.GridSections.GetLength(1); y++)
                 for (int x = 0; x < _gridInitializer.GridSections.GetLength(0); x++)
                 {
                     if (_gridInitializer.GridSections[x, y].CurrentBlockType != BlockType.Empty)

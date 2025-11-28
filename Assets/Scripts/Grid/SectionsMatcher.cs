@@ -1,6 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using Enums;
 using Grid.Components;
+using Saving;
 using Signals;
 using System;
 using System.Collections.Generic;
@@ -206,7 +207,7 @@ namespace Grid
                     CheckInOneDirection(DirectionEnum.Down, movedSectionType, movedSection.IndexX, movedSection.IndexY,
                         traverseMode: true, traverseSectionIndex: i);
 
-                    if (_verticalSections.Count < 2)
+                    if (_verticalSections.Count < 1)
                     {
                         _verticalSections.Clear();
                     }
@@ -243,7 +244,7 @@ namespace Grid
                     CheckInOneDirection(DirectionEnum.Right, movedSectionType, movedSection.IndexX, movedSection.IndexY,
                         traverseMode: true, traverseSectionIndex: i, flipSectionsLists: true);
 
-                    if (_horizontalSections.Count < 2)
+                    if (_horizontalSections.Count < 1)
                     {
                         _horizontalSections.Clear();
                     }
