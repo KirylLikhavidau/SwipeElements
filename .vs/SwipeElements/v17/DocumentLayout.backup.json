@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\installers\\uiinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\uiinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|c:\\users\\arsen\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\projects\\swipeelements\\assets\\scripts\\datasaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\datasaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|c:\\users\\arsen\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\projects\\swipeelements\\assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\grid\\gridinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grid\\gridinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|c:\\users\\arsen\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\projects\\swipeelements\\assets\\scripts\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\grid\\gridinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grid\\gridinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\grid\\gridnormalizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\signals\\emptygridsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\signals\\emptygridsignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\installers\\uiinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\uiinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D71F2BF6-8DBE-A5DA-4C93-271B45ABFCA9}|Assembly-CSharp.csproj|C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\assets\\scripts\\grid\\sectiondeactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,21 +134,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataSaver.cs",
-              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\DataSaver.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DataSaver.cs",
-              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\DataSaver.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DataSaver.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAwwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T16:38:06.092Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -171,32 +162,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LevelButtonsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
-              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SaveData.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\SaveData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\SaveData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T20:55:41.266Z"
+              "WhenOpened": "2025-11-28T16:42:14.566Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DataSaver.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\DataSaver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DataSaver.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\DataSaver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DataSaver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:38:06.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SceneLoader.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\SceneLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneLoader.cs",
               "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\SceneLoader.cs",
               "RelativeToolTip": "Assets\\Scripts\\SceneLoader.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAowFwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T17:33:15.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RestartButtonClickedSignal.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\RestartButtonClickedSignal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\RestartButtonClickedSignal.cs",
@@ -208,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Bootstrap.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Bootstrap.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bootstrap.cs",
@@ -216,11 +221,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Bootstrap.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T21:28:56.5Z"
+              "WhenOpened": "2025-11-24T21:28:56.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GridInstaller.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\GridInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\GridInstaller.cs",
@@ -232,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GridNormalizer.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Grid\\GridNormalizer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\GridNormalizer.cs",
@@ -244,7 +250,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "UIInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\UIInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\UIInstaller.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\UIInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installers\\UIInstaller.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T21:46:19.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LevelButtonsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
+              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelUI\\LevelButtonsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T20:55:41.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GridInitializer.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Grid\\GridInitializer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\GridInitializer.cs",
@@ -252,12 +283,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Grid\\GridInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T09:32:13.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T09:32:13.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "EmptyGridSignal.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\EmptyGridSignal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\EmptyGridSignal.cs",
@@ -269,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SectionDeactivator.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Grid\\SectionDeactivator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\SectionDeactivator.cs",
@@ -281,19 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UIInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\UIInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\UIInstaller.cs",
-              "ToolTip": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\UIInstaller.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Installers\\UIInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T21:46:19.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "BalloonInstaller.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\BalloonInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\BalloonInstaller.cs",
@@ -305,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BootstrapInstaller.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\BootstrapInstaller.cs",
@@ -317,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "BalloonPool.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Pools\\BalloonPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pools\\BalloonPool.cs",
@@ -329,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BlockType.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Enums\\BlockType.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\BlockType.cs",
@@ -341,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SectionsMatcher.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Grid\\SectionsMatcher.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\SectionsMatcher.cs",
@@ -353,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SectionDetectedSignal.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\SectionDetectedSignal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\SectionDetectedSignal.cs",
@@ -365,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BlocksDeactivatedSignal.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\BlocksDeactivatedSignal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\BlocksDeactivatedSignal.cs",
@@ -377,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DoTweenConfig.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\DoTweenConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\DoTweenConfig.cs",
@@ -389,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GridBlocksMover.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Grid\\GridBlocksMover.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grid\\GridBlocksMover.cs",
@@ -401,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Balloon.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Balloon\\Balloon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Balloon\\Balloon.cs",
@@ -413,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PrefabsConfig.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\PrefabsConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\PrefabsConfig.cs",
@@ -425,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "PoolInstaller.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\PoolInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\PoolInstaller.cs",
@@ -437,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "BalloonSpawner.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Balloon\\BalloonSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Balloon\\BalloonSpawner.cs",
@@ -449,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "BalloonConfig.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\BalloonConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\BalloonConfig.cs",
@@ -461,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "GridSectionsFactory.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Factories\\GridSectionsFactory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Factories\\GridSectionsFactory.cs",
@@ -473,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "GridConfig.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Configs\\GridConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Configs\\GridConfig.cs",
@@ -485,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "FactoryInstaller.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Installers\\FactoryInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\FactoryInstaller.cs",
@@ -497,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "GridNormalizedSignal.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Signals\\GridNormalizedSignal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Signals\\GridNormalizedSignal.cs",
@@ -509,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BalloonsPool.cs",
               "DocumentMoniker": "C:\\Users\\arsen\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\unity\\Projects\\SwipeElements\\Assets\\Scripts\\Factories\\BalloonsPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Factories\\BalloonsPool.cs",

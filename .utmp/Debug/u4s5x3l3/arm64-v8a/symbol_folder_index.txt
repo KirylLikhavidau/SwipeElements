@@ -1,0 +1,1 @@
+C:\Users\arsen\OneDrive\MyDesktop\unity\Projects\SwipeElements\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\Debug\u4s5x3l3\obj\arm64-v8a
