@@ -74,8 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e363cad2e3bfb6448653e20e90719cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dataSaverPrefab: {fileID: 5713636985640026291, guid: 629741c63eb9ffb4b8d10ae4cb0d1b18, type: 3}
   _inputConfig: {fileID: 11400000, guid: dd38fbc3124f3ea4dafcc59b6701f1ed, type: 2}
-  _gridConfig: {fileID: 11400000, guid: 54eb8152d0d03ec48a8cd97399545694, type: 2}
   _blockConfig: {fileID: 11400000, guid: 61581453c24273e4da849beb063831cc, type: 2}
   _doTweenConfig: {fileID: 11400000, guid: dc61c6a152b4c394f9481a030d6e4c69, type: 2}
   _balloonConfig: {fileID: 11400000, guid: 960906c5ce524454f914d5f04624c250, type: 2}

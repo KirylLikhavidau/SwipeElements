@@ -11,15 +11,19 @@ namespace Bootstrap
     {
         private readonly SignalBus _signalBus;
 
+        private DataSaver _dataSaver;
+
         private int _firstLevelIndex;
         private int _maxLevelIndex;
         private int _currentActiveLevelIndex;
 
         private bool _initted;
 
-        public SceneLoader(SignalBus signalBus, int firstLevelIndex, int maxLevelIndex)
+        public SceneLoader(SignalBus signalBus, int firstLevelIndex, int maxLevelIndex, DataSaver dataSaver)
         {
             _signalBus = signalBus;
+
+            _dataSaver = dataSaver;
 
             _firstLevelIndex = firstLevelIndex;
             _maxLevelIndex = maxLevelIndex;
@@ -53,6 +57,12 @@ namespace Bootstrap
             }
             else
             {
+                int startLevelIndex = _dataSaver.RequestSceneIndex();
+                if (startLevelIndex > 0)
+                {
+                    _currentActiveLevelIndex = startLevelIndex;
+                }
+
                 _initted = true;
             }
 
@@ -73,6 +83,9 @@ namespace Bootstrap
 
             operation = SceneManager.LoadSceneAsync(_currentActiveLevelIndex, LoadSceneMode.Additive);
             await operation.ToUniTask();
+
+            _dataSaver.SaveSceneIndex(_currentActiveLevelIndex);
+            _dataSaver.SaveGridLayout(null);
         }
 
         private async UniTask ReloadLevelAsync()
@@ -88,6 +101,8 @@ namespace Bootstrap
 
             operation = SceneManager.LoadSceneAsync(_currentActiveLevelIndex, LoadSceneMode.Additive);
             await operation.ToUniTask();
+
+            _dataSaver.SaveGridLayout(null);
         }
     }
 }

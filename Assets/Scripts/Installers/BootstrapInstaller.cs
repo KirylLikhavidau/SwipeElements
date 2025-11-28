@@ -10,6 +10,7 @@ namespace Installers
 {
     public class BootstrapInstaller : MonoInstaller
     {
+        [SerializeField] private DataSaver _dataSaverPrefab;
         [SerializeField] private InputConfig _inputConfig;
         [SerializeField] private PrefabsConfig _blockConfig;
         [SerializeField] private DoTweenConfig _doTweenConfig;
@@ -23,6 +24,7 @@ namespace Installers
 
             BindConfigs();
 
+            BindDataSaver();
             BindInput();
 
             BindSceneLoader();
@@ -103,6 +105,15 @@ namespace Installers
             Container
                 .BindInterfacesTo<BootstrapInstaller>()
                 .FromInstance(this)
+                .NonLazy();
+        }
+
+        private void BindDataSaver()
+        {
+            Container
+                .Bind<DataSaver>()
+                .FromComponentInNewPrefab(_dataSaverPrefab)
+                .AsSingle()
                 .NonLazy();
         }
     }

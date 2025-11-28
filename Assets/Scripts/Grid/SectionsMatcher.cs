@@ -12,6 +12,8 @@ namespace Grid
     public class SectionsMatcher : IInitializable, IDisposable
     {
         private readonly SignalBus _signalBus;
+        private readonly DataSaver _dataSaver;
+
         private GridInitializer _gridInitializer;
         private SectionDeactivator _sectionDeactivator;
 
@@ -19,10 +21,12 @@ namespace Grid
         private List<GridSection> _verticalSections = new List<GridSection>();
         private List<GridSection> _matchingSections = new List<GridSection>();
 
-        public SectionsMatcher(GridInitializer gridInitializer, SignalBus signalBus, SectionDeactivator sectionDeactivator)
+        public SectionsMatcher(GridInitializer gridInitializer, SignalBus signalBus, SectionDeactivator sectionDeactivator, DataSaver dataSaver)
         {
-            _gridInitializer = gridInitializer;
             _signalBus = signalBus;
+            _dataSaver = dataSaver;
+
+            _gridInitializer = gridInitializer;
             _sectionDeactivator = sectionDeactivator;
         }
 
@@ -90,6 +94,8 @@ namespace Grid
 
             if (sectionsToDeactivate.Count > 0)
                 _signalBus.Fire(new BlocksDeactivatingSignal(sectionsToDeactivate));
+            else
+                _dataSaver.SaveGridLayout(_gridInitializer.GridSections);
         }
 
         private void CheckInOneDirection(DirectionEnum direction, BlockType sectionBlockType, int sectionX, int sectionY,

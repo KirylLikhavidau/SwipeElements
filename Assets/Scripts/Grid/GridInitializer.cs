@@ -3,12 +3,15 @@ using Enums;
 using Factories;
 using Grid.Components;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Zenject;
 
 namespace Grid
 {
     public class GridInitializer : IInitializable
     {
+        private readonly DataSaver _dataSaver;
+
         public GridSection[,] GridSections { get; private set; }
 
         private GridSectionsFactory _sectionsFactory;
@@ -18,22 +21,35 @@ namespace Grid
         private float _cellSize;
         private int[] _initialLayout;
 
-        public GridInitializer(GridConfig gridConfig, GridSectionsFactory sectionsFactory, RectTransform gridInitialStartPoint)
+        public GridInitializer(GridConfig gridConfig, GridSectionsFactory sectionsFactory, RectTransform gridInitialStartPoint, DataSaver dataSaver)
         {
+            _dataSaver = dataSaver;
+
             _gridWidth = gridConfig.Width;
             _gridHeight = gridConfig.Height;
             _cellSize = gridConfig.CellSize;
             _gridInitialStartPoint = gridInitialStartPoint;
             _sectionsFactory = sectionsFactory;
 
-            _initialLayout = new int[gridConfig.InitialLayout.Length];
-            for (int i = 0; i < gridConfig.InitialLayout.Length; i++)
+            int[] savedLayout = _dataSaver.RequestInitialLayout();
+            if (savedLayout != null && savedLayout.Length > 0)
             {
-                _initialLayout[i] = gridConfig.InitialLayout[i];
+                _initialLayout = new int[savedLayout.Length];
+                for (int i = 0; i < savedLayout.Length; i++)
+                {
+                    _initialLayout[i] = savedLayout[i];
+                }
+            }
+            else
+            {
+                _initialLayout = new int[gridConfig.InitialLayout.Length];
+                for (int i = 0; i < gridConfig.InitialLayout.Length; i++)
+                {
+                    _initialLayout[i] = gridConfig.InitialLayout[i];
+                }
             }
 
             GridSections = new GridSection[_gridWidth, _gridHeight];
-
         }
 
         public void Initialize()
